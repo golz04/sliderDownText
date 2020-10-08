@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-slide{
+    font-size: 40px;
+    color: darkgray;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    height: 50px;
+    padding-left:15px;
+    overflow: hidden;
+}
+.slider div{
+    color:#fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.slider-text-1 {
+    background: red;
+    border-radius: 5px;
+    animation: slide 5s linear infinite;
+}
+.slider-text-2 {
+    background: yellow;
+    border-radius: 5px;
+}
+.slider-text-3 {
+    background: green;
+    border-radius: 5px;
+}
+@keyframes slide {
+    0% {margin-top:-300px;}
+    5% {margin-top:-200px;}
+    33% {margin-top:-200px;}
+    38% {margin-top:-100px;}
+    66% {margin-top:-100px;}
+    71% {margin-top:0px;}
+    100% {margin-top:0px;}
+}
